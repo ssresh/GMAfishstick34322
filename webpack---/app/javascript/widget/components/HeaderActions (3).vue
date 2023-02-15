@@ -1,0 +1,6 @@
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.showHeaderActions)?_c('div',{staticClass:"actions flex items-center"},[(_vm.canLeaveConversation && _vm.hasEndConversationEnabled)?_c('button',{staticClass:"button transparent compact",attrs:{"title":_vm.$t('END_CONVERSATION')},on:{"click":_vm.resolveConversation}},[_c('fluent-icon',{class:_vm.$dm('text-black-900', 'dark:text-slate-50'),attrs:{"icon":"sign-out","size":"22"}})],1):_vm._e(),_vm._v(" "),(_vm.showPopoutButton)?_c('button',{staticClass:"button transparent compact new-window--button ",on:{"click":_vm.popoutWindow}},[_c('fluent-icon',{class:_vm.$dm('text-black-900', 'dark:text-slate-50'),attrs:{"icon":"open","size":"22"}})],1):_vm._e(),_vm._v(" "),_c('button',{staticClass:"button transparent compact close-button",class:{
+      'rn-close-button': _vm.isRNWebView,
+    },on:{"click":_vm.closeWindow}},[_c('fluent-icon',{class:_vm.$dm('text-black-900', 'dark:text-slate-50'),attrs:{"icon":"dismiss","size":"24"}})],1)]):_vm._e()}
+var staticRenderFns = []
+
+export { render, staticRenderFns }

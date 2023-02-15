@@ -1,0 +1,6 @@
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"px-5"},[_c('div',{staticClass:"flex items-center justify-between mb-4"},[_c('div',{staticClass:"max-w-xs",class:_vm.$dm('text-black-700', 'dark:text-slate-50')},[_c('div',{staticClass:"text-base leading-5 font-medium mb-1"},[_vm._v("\n        "+_vm._s(_vm.isOnline
+            ? _vm.$t('TEAM_AVAILABILITY.ONLINE')
+            : _vm.$t('TEAM_AVAILABILITY.OFFLINE'))+"\n      ")]),_vm._v(" "),_c('div',{staticClass:"text-xs leading-4 mt-1"},[_vm._v("\n        "+_vm._s(_vm.replyWaitMessage)+"\n      ")])]),_vm._v(" "),(_vm.isOnline)?_c('available-agents',{attrs:{"agents":_vm.availableAgents}}):_vm._e()],1),_vm._v(" "),_c('custom-button',{staticClass:"font-medium",attrs:{"block":"","bg-color":_vm.widgetColor,"text-color":_vm.textColor},on:{"click":_vm.startConversation}},[_vm._v("\n    "+_vm._s(_vm.hasConversation ? _vm.$t('CONTINUE_CONVERSATION') : _vm.$t('START_CONVERSATION'))+"\n  ")])],1)}
+var staticRenderFns = []
+
+export { render, staticRenderFns }

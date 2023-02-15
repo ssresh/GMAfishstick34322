@@ -1,0 +1,4 @@
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"chat-bubble-wrap"},[_c('button',{staticClass:"chat-bubble agent",class:_vm.$dm('bg-white', 'dark:bg-slate-50'),on:{"click":_vm.onClickMessage}},[(_vm.showSender)?_c('div',{staticClass:"row--agent-block"},[_c('thumbnail',{attrs:{"src":_vm.avatarUrl,"size":"20px","username":_vm.agentName,"status":_vm.availabilityStatus}}),_vm._v(" "),_c('span',{staticClass:"agent--name"},[_vm._v(_vm._s(_vm.agentName))]),_vm._v(" "),_c('span',{staticClass:"company--name"},[_vm._v(" "+_vm._s(_vm.companyName))])],1):_vm._e(),_vm._v(" "),_c('div',{directives:[{name:"dompurify-html",rawName:"v-dompurify-html",value:(_vm.formatMessage(_vm.message, false)),expression:"formatMessage(message, false)"}],staticClass:"message-content",staticStyle:{"font-size":".937rem","line-height":"1.618"}})])])}
+var staticRenderFns = []
+
+export { render, staticRenderFns }
