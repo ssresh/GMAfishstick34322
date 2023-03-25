@@ -1,0 +1,193 @@
+<html>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+* {
+  font-family: 'Roboto', 'Ubuntu', sans-serif;
+  font-size: 1.5em;
+}
+
+body, html {
+  height: 100%;
+  width: auto;
+  overflow: hidden;
+  background: #f2f8ff;
+}
+
+.container {
+  width: 50%;
+  height: 50%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+
+svg {
+  width: 450px;
+  height: 300px;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  display:block;
+  z-index:100;
+}
+
+h2 {
+  text-align: center;
+  width: 100%;
+  font-size: 1em;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  background:#f2f8ff;
+  z-index:50;
+}
+
+h4 {
+  font-size: 0.4em;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  z-index:10;
+}
+
+.cog{
+  fill:#303030;
+}
+
+/*svg:hover .cog{
+  animation-duration:2.5s;
+  -webkit-animation-duration:2.5s;
+}*/
+
+.bigCog {
+  fill:#303030;
+  transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  animation: spinLarge 10s infinite linear;
+  -webkit-animation: spinLarge 10s infinite linear;
+}
+
+.medCog {
+  fill:#404040;
+  transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  animation: spinMed 10s infinite linear;
+  -webkit-animation: spinMed 10s infinite linear;
+}
+
+.smallCog {
+  fill:#202020;
+  transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  animation: spinSmall 10s infinite linear;
+  -webkit-animation: spinSmall 10s infinite linear;
+}
+
+@keyframes spinLarge {
+  from {
+    transform: rotate(0deg) scale(0.25);
+  }
+  to {
+    transform: rotate(359deg) scale(0.25);
+  }
+}
+@-webkit-keyframes spinLarge {
+  from {
+    transform: rotate(0deg) scale(0.25);
+  }
+  to {
+    transform: rotate(359deg) scale(0.25);
+  }
+}
+
+@keyframes spinMed {
+  from {
+    transform: rotate(0deg) scale(0.2);
+  }
+  to {
+    transform: rotate(-359deg)scale(0.2);
+  }
+}
+@-webkit-keyframes spinMed {
+  from {
+    transform: rotate(0deg) scale(0.2);
+  }
+  to {
+    transform: rotate(-359deg)scale(0.2);
+  }
+}
+
+@keyframes spinSmall {
+  from {
+    transform: rotate(0deg) scale(0.15);
+  }
+  to {
+    transform: rotate(359deg) scale(0.15);
+  }
+}
+@-webkit-keyframes spinSmall {
+  from {
+    transform: rotate(0deg) scale(0.15);
+  }
+  to {
+    transform: rotate(359deg) scale(0.15);
+  }
+}
+
+@media screen and (max-width: 620px) {
+  h2 {
+    font-size: 0.5em;
+    transition: 0.5s;
+  }
+  h4 {
+    font-size: 0.3em;
+    transition: 0.5s;
+  }
+  svg {
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    display: inline-block;
+    transform-origin: -50% 0%;
+    -webkit-transform-origin: -50% 0%;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+  }
+}
+
+
+
+</style>
+
+<body>
+  <div class="container">
+    <svg>
+      <path class="cog bigCog" d="m 50,-200 116,0 18,94 38,18 76,-56 82,84 -52,74 20,44 84,16 4,120 -90,14 -16,40 52,70 -86,88 -70,-48 -44,18 -14,86 -126,-2 -10,-88 -38,-14 -72,48 -90,-86 52,-70 -16,-42 -98,-14 4,-126 92,-10 18,-40 -56,-70 88,-90 74,52 40,-18 z"></path>
+      <circle cx="102.5" cy="132.5" r="20" fill="#f2f8ff" />
+      <path class="cog medCog" d="m 200,-230 116,0 18,94 38,18 76,-56 82,84 -52,74 20,44 84,16 4,120 -90,14 -16,40 52,70 -86,88 -70,-48 -44,18 -14,86 -126,-2 -10,-88 -38,-14 -72,48 -90,-86 52,-70 -16,-42 -98,-14 4,-126 92,-10 18,-40 -56,-70 88,-90 74,52 40,-18 z"></path>
+      <circle cx="253" cy="103" r="16" fill="#f2f8ff" />
+      <path class="cog smallCog" d="m 318,-207 116,0 18,94 38,18 76,-56 82,84 -52,74 20,44 84,16 4,120 -90,14 -16,40 52,70 -86,88 -70,-48 -44,18 -14,86 -126,-2 -10,-88 -38,-14 -72,48 -90,-86 52,-70 -16,-42 -98,-14 4,-126 92,-10 18,-40 -56,-70 88,-90 74,52 40,-18 z"></path>
+      <circle cx="371" cy="125" r="12" fill="#f2f8ff" />
+    </svg>
+    <h2>This page is under regular Maintenance</h2>
+    <h4> Get in touch with us on whatsapp +917014303903</h4>
+    </div>
+</body>
+</html>
