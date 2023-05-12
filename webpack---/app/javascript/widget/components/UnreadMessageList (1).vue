@@ -1,0 +1,8 @@
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"unread-wrap"},[_c('div',{staticClass:"close-unread-wrap"},[_c('button',{staticClass:"button small close-unread-button",on:{"click":_vm.closeFullView}},[_c('span',{staticClass:"flex items-center"},[_c('fluent-icon',{staticClass:"mr-1",attrs:{"icon":"dismiss","size":"12"}}),_vm._v("\n        "+_vm._s(_vm.$t('UNREAD_VIEW.CLOSE_MESSAGES_BUTTON'))+"\n      ")],1)])]),_vm._v(" "),_c('div',{staticClass:"unread-messages"},_vm._l((_vm.messages),function(message,index){return _c('unread-message',{key:message.id,attrs:{"message-type":message.messageType,"message-id":message.id,"show-sender":!index,"sender":message.sender,"message":_vm.getMessageContent(message),"campaign-id":message.campaignId}})}),1),_vm._v(" "),_c('div',{staticClass:"open-read-view-wrap"},[(_vm.unreadMessageCount)?_c('button',{staticClass:"button clear-button",on:{"click":_vm.openConversationView}},[_c('span',{staticClass:"flex items-center",class:{
+          'is-background-light': _vm.isBackgroundLighter,
+        },style:({
+          color: _vm.widgetColor,
+        })},[_c('fluent-icon',{staticClass:"mr-2",attrs:{"size":"16","icon":"arrow-right"}}),_vm._v("\n        "+_vm._s(_vm.$t('UNREAD_VIEW.VIEW_MESSAGES_BUTTON'))+"\n      ")],1)]):_vm._e()])])}
+var staticRenderFns = []
+
+export { render, staticRenderFns }
