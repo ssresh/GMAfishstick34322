@@ -1,0 +1,6 @@
+
+@media (max-width: 767px) {
+    .aah-spr-reviews_tab_1 {
+        background: url(css_sprites.png) -10px -5px !important;
+    }
+}
